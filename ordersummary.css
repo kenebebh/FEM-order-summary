@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* The background image */
+
+  #container{
+            background-color: hsl(225, 100%, 94%);
+            height: 1000px;
+            width: 100%;
+            background-image: url(FEM-IMGS/pattern-background-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+/* The main design */
+
+#main{
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 40%;
+    height: 34.2rem;
+}
+
+/* The top image */
+
+#top-img{
+    width: 100%;
+    border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+}
+#image{
+    background-color: white;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+}
+
+/* just centering the items */
+
+#content{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+}
+
+/* The order summary part */
+
+#top{
+    padding: 1.5rem 0 1rem; 
+}
+
+/* the paragraph part */
+
+#middle{
+    margin: 0 auto;
+   padding: 0 0 0 1.5rem;
+     font-size: 1.09rem;
+    color: 
+}
+#yes{
+    margin-bottom: 1.3rem;
+}
+
+/* The part after the p */
+
+#display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 5rem;
+    padding: 10px;
+    background-color:  hsl(225, 100%, 98%);
+    margin: 1rem 0 1.5rem 0;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+}
+#center{
+    display: flex;
+}
+#music{
+    padding: 0 1rem 0 0;
+}
+.price{
+    color: #808080;
+    text-decoration: none;
+}
+h4{
+    padding-bottom: .2rem
+}
+
+
+/* The bottom */
+
+#pay{
+    
+}
+.active{
+    background-color: hsl(245, 75%, 52%);
+    padding: 10px 65px;
+    border-radius: 10px;
+    box-shadow: 7px 10px 7px lightgrey;
+    font-size: 1.09rem;
+    color: white;
+    text-decoration: none;
+}
+.active:hover{
+    color: paleturquoise;
+    font-size: 1.2rem;
+}
+#cancel{
+    font-size: 1.09rem;
+    margin: 2rem 0 2rem 0; 
+}
+.price:hover{
+    color: darkslategrey;
+}
+.change:hover{
+    color: white;
+}
+
+/* media queries */
+
+@media only screen and (max-width:815px){
+     #container{
+            background-color: hsl(225, 100%, 94%);
+            height: 100%;
+            width: 100%;
+            background-image: url(FEM-IMGS/pattern-background-mobile.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+         padding: 2rem 0;
+        }
+    
+    #main{
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 90%;
+    height: 100%;
+}
+    h4{
+        font-size: 0.95rem;
+    }
+    #plan{
+        padding-top: .5rem
+    }
+    #music{
+    padding: 0 .6rem 0 0;
+}
+    .active{
+    padding: 10px 50px;
+}
+}
